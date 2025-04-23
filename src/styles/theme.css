@@ -1,5 +1,12 @@
-:root {
-    --background: red
+:root{
+    --background: #d9e0ef;
+    --borders: #2C2F48;
+    --text-input: #C2C3D1;
+    --cursor-input: #753bfc;
+
+    --primary-text: #293647;
+
+    --primary-color: #8b5cf6;
 }
 
 [data-theme='login'] {

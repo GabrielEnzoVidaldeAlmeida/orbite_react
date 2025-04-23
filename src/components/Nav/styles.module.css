@@ -1,0 +1,62 @@
+.containerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: red; */
+  width: 100%;
+  height: 12rem;
+  border-bottom: 0.2rem solid var(--borders);
+}
+
+.logoNav img {
+  height: 12rem;
+  width: 12rem;
+}
+
+.infoNav {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 3.2rem;
+  margin-right: 4rem;
+}
+
+.infoNav strong {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.infoNav input {
+  background: #0F0F27;
+  color: var(--text-input);
+  caret-color: var(--cursor-input);
+  border: 0.2rem solid var(--borders);
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.infoNav input::placeholder {
+  color: var(--text-input);
+}
+
+.infoNav a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.linkRegisterNav {
+  border: 0.1rem solid var(--borders);
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+}
+
+.linkRegisterNav:hover {
+  background: var(--primary-color);
+  color: #000;
+  box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
+}
