@@ -36,3 +36,21 @@ label {
   align-self: flex-start;
   font-weight: bold;
 }
+
+.inputContainer {
+  display: flex;
+
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-login);
+}
+
+@media (max-width: 400px) {
+  .input {
+    min-width: unset;
+  }
+}
