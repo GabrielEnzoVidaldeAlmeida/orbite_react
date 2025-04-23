@@ -1,4 +1,7 @@
+import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
+
+import '../../styles/global.css'
 
 type MainTemplateProps = {
   children: React.ReactNode;
@@ -6,15 +9,16 @@ type MainTemplateProps = {
 
 export function MainTemplate ({children}: MainTemplateProps) {
   return (
-    <div>
+    <div className="layout">
       <Nav />
 
       {/* MENU */}
       
+      <main>
+        {children}
+      </main>
 
-      {children}
-
-      {/* FOOTER */}
+      <Footer />
     </div>
   )
 }

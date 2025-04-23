@@ -4,9 +4,14 @@
     --text-input: #C2C3D1;
     --cursor-input: #753bfc;
 
-    --primary-text: #293647;
+    --primary-text: #0a0f1a;
+    --secondary-text: #293647;
 
     --primary-color: #8b5cf6;
+    --links-hover: #AE95DE;
+
+    --background-footer: #3A0DA4;
+    --label-footer: #888888;
 }
 
 [data-theme='login'] {
