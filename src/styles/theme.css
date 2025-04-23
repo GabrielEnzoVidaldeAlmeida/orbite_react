@@ -3,5 +3,10 @@
 }
 
 [data-theme='login'] {
-    --background: linear-gradient(to right, #120B45 0%, #0B0F1A 99%)
+    --background: linear-gradient(to right, #120B45 0%, #0B0F1A 99%);
+    --text-login: #e6e9f0;
+    --border-input: #fc6101;
+    --btn-default: #FF914D;
+    --link: #FF914D;
+    --link-hover: #fc6101;
 }

@@ -4,6 +4,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 2.4rem;
 }
 
 .logoLogin img{
@@ -13,11 +14,50 @@
 
 }
 
-/* .formLogin {
-  background: blue;
-  width: 10rem;
-  height: 10rem;
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-login);
+  gap: 4.2rem;
+  /* background: blue; */
+}
+
+/* .formLogin input {
+  border: none;
+  height: 2.4rem;
+  width: 36rem;
+
+  background: transparent;
+  border-bottom: solid 0.2rem var(--border-input);
+}
+
+.formLogin strong {
+  align-self: flex-start;
+  margin-bottom: -1.6rem;
 } */
+
+.formLogin strong {
+  margin-top: 2.4rem;
+  /* padding-bottom: 2.4rem; */
+  color: var(--text-login);
+}
+
+.formLogin a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.formLogin a:hover {
+  color: var(--link-hover);
+}
 
 .logoLogin,
 .formLogin {

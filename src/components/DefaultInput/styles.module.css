@@ -1,0 +1,38 @@
+.input {
+  background: transparent;
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--text-login);
+  outline: none;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid var(--border-input);
+  transition: all 0.15s ease-in-out;
+  /* width: 42rem; */
+
+  width: 100%;
+  max-width: 36rem;
+  min-width: 32rem;
+}
+
+.input:focus {
+  border: 0.2rem solid #A259FF;
+  border-radius: 0.8rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 36rem;
+  gap: 0.8rem;
+}
+
+label {
+  display: flex;
+  align-self: flex-start;
+  font-weight: bold;
+}

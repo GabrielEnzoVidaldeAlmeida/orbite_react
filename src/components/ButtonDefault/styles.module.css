@@ -1,0 +1,16 @@
+.btnDefault {
+  background: var(--btn-default);
+  color: var(--text-login);
+  padding: 1rem 3.6rem;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.btnDefault:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
