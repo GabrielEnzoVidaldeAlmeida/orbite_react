@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 import logo from '../../../assets/images/logo/logo.png'
 import { DefaultInput } from "../../DefaultInput"
-import { ButtonDefault } from "../../ButtonDefault"
+import { RegisterButton } from "../../RegisterButton"
 
 export function Login () {
   useEffect(() => {
@@ -28,7 +28,8 @@ export function Login () {
           {/* <strong>Senha:</strong> */}
           <DefaultInput labelText="Password:" id="password" type="password" />
 
-          <ButtonDefault text="Entrar"/>
+          {/* <ButtonDefault text="Entrar"/> */}
+          <RegisterButton text="Entrar" />
         </form>
           <strong>Não tem uma conta? &nbsp;<a href="#">Criar conta</a></strong>
       </div>

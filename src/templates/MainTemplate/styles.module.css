@@ -1,0 +1,22 @@
+.menuBtn {
+  /* background: blue; */
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+}
+
+.menuBtn button {
+  display: flex;
+  background: var(--btn-default);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.menuBtn button:hover {
+  filter: brightness(80%);
+}

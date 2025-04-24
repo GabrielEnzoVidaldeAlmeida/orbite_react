@@ -30,6 +30,7 @@
 
 .linksFooter label {
   font-size: 2.4rem;
+  font-weight: bold;
   color: var(--label-footer);
   margin-bottom: 0.8rem;
 }
@@ -54,7 +55,16 @@
   margin-left: auto;
 }
 
+.socialMedia label {
+  align-self: flex-end;
+}
+
 .socialMediaIcons {
   display: flex;
   gap: 2.4rem;
+}
+
+.socialMediaIcons svg {
+  width: 4.2rem;
+  height: 4.2rem;
 }

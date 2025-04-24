@@ -1,5 +1,7 @@
-import { FacebookIcon, InstagramIcon, TwitterIcon } from 'lucide-react'
 import styles from './styles.module.css'
+import { X } from '../../assets/svgs/icon-svg/X'
+import { Facebook } from '../../assets/svgs/icon-svg/Facebook/intex'
+import { Instagram } from '../../assets/svgs/icon-svg/Instagram'
 
 export function Footer () {
   return (
@@ -23,9 +25,10 @@ export function Footer () {
         <div className={`${styles.linksFooter} ${styles.socialMedia}`}>
           <label>Redes Sociais</label>
           <div className={styles.socialMediaIcons}>
-            <InstagramIcon />
-            <FacebookIcon />
-            <TwitterIcon />
+            <Instagram />
+            <Facebook />
+            <X />
+            
           </div>
         </div>
       </div>

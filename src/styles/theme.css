@@ -7,8 +7,11 @@
     --primary-text: #0a0f1a;
     --secondary-text: #293647;
 
-    --primary-color: #8b5cf6;
+    /* --primary-color: #8b5cf6; */
+    --primary-color: #753bfc;
     --links-hover: #AE95DE;
+
+    --btn-default: #753bfc;
 
     --background-footer: #3A0DA4;
     --label-footer: #888888;
