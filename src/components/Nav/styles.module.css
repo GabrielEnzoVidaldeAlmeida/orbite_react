@@ -18,6 +18,7 @@
   display: flex;
   gap: 3.2rem;
   margin-right: 4rem;
+  color: var(--primary-text);
 }
 
 .infoNav strong {
@@ -35,6 +36,7 @@
   border: 0.2rem solid var(--borders);
   border-radius: 0.4rem;
   padding: 0.8rem;
+  outline: none;
   font-family: inherit;
   font-size: inherit;
 }
@@ -45,7 +47,7 @@
 
 .infoNav a {
   text-decoration: none;
-  color: var(--secondary-text);
+  color: var(--primary-text);
   transition: all 0.15s ease-in-out;
 }
 
@@ -57,6 +59,7 @@
 
 .linkRegisterNav:hover {
   background: var(--primary-color);
-  color: var(--secondary-text);
+  color: #293647;
+  border-color: #293647;
   box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
 }

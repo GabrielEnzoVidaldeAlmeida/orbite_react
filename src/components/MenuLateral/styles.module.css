@@ -1,0 +1,62 @@
+.menuLateralContainer {
+  align-items: center;
+  width: 42rem;
+  background: var(--background-menu);
+  border-right: solid 0.2rem var(--borders);
+}
+
+.contentMenuLateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-text);
+  /* background: red; */
+}
+
+.menuLateralBtn {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  margin: 1.2rem;
+  gap: 1.6rem;
+}
+
+.menuLateralBtn button:hover {
+  filter: brightness(80%);
+}
+
+.menuLateralContainer h2 {
+  font-size: 3.2rem;
+}
+
+.themeBtn {
+  display: flex;
+  background: var(--btn-default);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  border: solid 0.2rem var(--borders);
+  padding: 0.4rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+
+  width: 4.2rem;
+
+}
+
+.closeMenuBtn {
+  width: 6.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 0rem;
+  border-radius: 0.4rem;
+  border: solid 0.2rem var(--border-card);
+  background: var(--background-btn-close-menu);
+  color: var(--main-text);
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}

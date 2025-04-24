@@ -1,5 +1,6 @@
 .containerFooter {
   background-color: var(--background-footer);
+  color: var(--primary-text);
 }
 
 .containerFooter strong {

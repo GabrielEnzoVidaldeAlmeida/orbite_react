@@ -10,10 +10,36 @@
     /* --primary-color: #8b5cf6; */
     --primary-color: #753bfc;
     --links-hover: #AE95DE;
+    --border-card: #7c3aed33;
+    --background-menu: #99a5c8;
 
     --btn-default: #753bfc;
+    --background-btn-close-menu: #78819b;
 
     --background-footer: #3A0DA4;
+    --label-footer: #888888;
+}
+
+[data-theme='dark'] {
+    --background: #0B0F1A;
+    /* --borders: #2C2F48; */
+    --borders: #6f77c9;
+    --text-input: #C2C3D1;
+    --cursor-input: #FC6101;
+
+    --primary-text: #E6E9F0;
+    --secondary-text: #C2C3D1;
+
+    /* --primary-color: #8b5cf6; */
+    --primary-color: #FC6101;
+    --links-hover: #FC6101;
+    --border-card: #7c3aed33;
+    --background-menu: #050B1A;
+
+    --btn-default: #FC6101;
+    --background-btn-close-menu: #78819b;
+
+    --background-footer: #1D0051;
     --label-footer: #888888;
 }
 
