@@ -6,6 +6,7 @@
 
     --primary-text: #0a0f1a;
     --secondary-text: #293647;
+    --contrast-text: #E6E9F0;
 
     /* --primary-color: #8b5cf6; */
     --primary-color: #753bfc;
@@ -17,7 +18,8 @@
     --background-btn-close-menu: #78819b;
 
     --background-footer: #3A0DA4;
-    --label-footer: #888888;
+    /* --label-footer: #888888; */
+    --label-footer: #d9e0ef;
 }
 
 [data-theme='dark'] {
@@ -29,6 +31,8 @@
 
     --primary-text: #E6E9F0;
     --secondary-text: #C2C3D1;
+    --contrast-text: #293647;
+
 
     /* --primary-color: #8b5cf6; */
     --primary-color: #FC6101;

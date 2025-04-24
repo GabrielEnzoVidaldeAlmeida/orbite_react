@@ -59,7 +59,7 @@
 
 .linkRegisterNav:hover {
   background: var(--primary-color);
-  color: #293647;
+  color: var(--contrast-text);
   border-color: #293647;
   box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
 }
