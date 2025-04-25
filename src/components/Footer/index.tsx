@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 import { X } from '../../assets/svgs/icon-svg/X'
-import { Facebook } from '../../assets/svgs/icon-svg/Facebook/intex'
+import { Facebook } from '../../assets/svgs/icon-svg/Facebook'
 import { Instagram } from '../../assets/svgs/icon-svg/Instagram'
 
 export function Footer () {
