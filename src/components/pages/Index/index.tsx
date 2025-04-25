@@ -1,6 +1,8 @@
+import styles from './styles.module.css'
+
 export function Index () {
   return (
-    <div>
+    <div className={styles.containerIndex}>
       
     </div>
   )

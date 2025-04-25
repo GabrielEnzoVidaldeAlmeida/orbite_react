@@ -7,6 +7,7 @@ import styles from './styles.module.css'
 import '../../styles/global.css'
 import { useState } from "react";
 import { MenuLateral } from "../../components/MenuLateral";
+import { MainContainer } from "../../components/Layout/MainContainer";
 
 type MainTemplateProps = {
   children: React.ReactNode;
@@ -31,12 +32,15 @@ export function MainTemplate ({children}: MainTemplateProps) {
         {menu && <MenuLateral onClose={closeMenu} />}
 
         <main className={styles.mainContent}>
-          {!menu && (
-            <div className={styles.menuBtn}>
-              <button onClick={handleMenu}><MenuIcon /></button>
-            </div>
-          )}
+        <div
+          className={styles.menuBtn}
+          style={{ visibility: menu ? 'hidden' : 'visible' }}
+        >
+          <button onClick={handleMenu}><MenuIcon /></button>
+        </div>
+        <MainContainer >
           {children}
+        </MainContainer>
         </main>
       </div>
 
@@ -44,11 +48,3 @@ export function MainTemplate ({children}: MainTemplateProps) {
     </div>
   )
 }
-
-      {/* {menu ? (
-        <MenuLateral onClose={closeMenu} />
-      ) : (
-        <div className={styles.menuBtn}>
-        <button onClick={handleMenu}><MenuIcon /></button>
-      </div>
-      )} */}

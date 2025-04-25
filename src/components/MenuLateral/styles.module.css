@@ -1,9 +1,19 @@
 .menuLateralContainer {
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 42rem;
+
   background: var(--background-menu);
   border-right: solid 0.2rem var(--borders);
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
 
 .contentMenuLateral {
   display: flex;
@@ -12,6 +22,11 @@
   text-align: center;
   color: var(--primary-text);
   /* background: red; */
+}
+
+.contentMenuLateral p {
+  /* background: blue; */
+  margin: 0rem 1.2rem 0rem 1.2rem;
 }
 
 .menuLateralBtn {
@@ -59,4 +74,12 @@
   cursor: pointer;
 
   transition: all 0.1s ease-in-out;
+}
+
+.containerRegisterBtn {
+  display: flex;
+  margin-top: 2.4rem;
+  /* background-color: red; */
+  gap: 2rem;
+  flex-direction: row;
 }
