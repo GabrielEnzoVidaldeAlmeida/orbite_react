@@ -17,6 +17,7 @@ import sociologia from '../../../assets/images/icons-subject/sociologia.png'
 import apicultura from '../../../assets/images/icons-subject/apicultura.png'
 import filosofia from '../../../assets/images/icons-subject/filosofia.png'
 import { ArrowRight } from 'lucide-react'
+import { EpCardDefault } from '../../EpCardDefault'
 
 
 
@@ -47,6 +48,11 @@ export function Index () {
         {themesSubject.map((theme, index) => (
           <CardTheme key={index} textImg={theme?.textImg} svgIcon={theme?.svgIcon} text={theme.text} />
         ))}
+      </section>
+
+      <h2>Episódios Recentes</h2>
+      <section className={styles.epsRecent}>
+        <EpCardDefault />
       </section>
     </div>
   )

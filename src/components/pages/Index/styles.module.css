@@ -1,7 +1,7 @@
 .containerIndex {
   /* background-color: red; */
   width: 100%;
-  height: 40rem;
+  /* height: 40rem; */
 }
 
 .mainThemes {
@@ -12,4 +12,9 @@
   justify-content: center;
   gap: 1.3rem;
   height: auto;
+}
+
+.containerIndex section {
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
 }

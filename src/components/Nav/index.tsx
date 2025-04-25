@@ -13,7 +13,7 @@ export function Nav () {
         </div>
 
         <div className={styles.infoNav}>
-          <strong>Categorias <ChevronDown /></strong>
+          <strong>Temas <ChevronDown /></strong>
           <input placeholder='O que você procura?'/>
           <a href='#'>Login</a>
           <a href='#' className={styles.linkRegisterNav}>Cadastrar-se</a>

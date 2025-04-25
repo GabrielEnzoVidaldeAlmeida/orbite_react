@@ -10,9 +10,13 @@
 
     /* --primary-color: #8b5cf6; */
     --primary-color: #753bfc;
+    --links-card-default: #5b17f8;
     --links-hover: #AE95DE;
     --border-card: #7c3aed33;
+    --background-card: #A6B3D9;
     --background-menu: #99a5c8;
+    --options-card: #585f72;
+    --options-card-hover: #37373a;
 
     --btn-default: #753bfc;
     --background-btn-close-menu: #78819b;
