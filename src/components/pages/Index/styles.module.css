@@ -16,5 +16,34 @@
 
 .containerIndex section {
   margin-top: 1.2rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+.epsRecent {
+  display: flex;
+  overflow-x: auto;
+  gap: 4.8rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  padding-bottom: 0.8rem;
+
+}
+
+.epsRecent::-webkit-scrollbar {
+  height: 0.8rem; /* altura da barra */
+}
+
+.epsRecent::-webkit-scrollbar-track {
+  background: var(--background-card); /* cor do fundo da barra */
+  border-radius: 1rem;
+}
+
+.epsRecent::-webkit-scrollbar-thumb {
+  background: var(--primary-purple); /* ou alguma var roxa que você usar */
+  border-radius: 1rem;
+}
+
+.epsRecent::-webkit-scrollbar-thumb:hover {
+  background: #7b61ff; /* um roxo um pouco mais claro no hover */
 }

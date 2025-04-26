@@ -24,6 +24,8 @@
     --background-footer: #3A0DA4;
     /* --label-footer: #888888; */
     --label-footer: #d9e0ef;
+
+    --primary-purple: #5f33e1;
 }
 
 [data-theme='dark'] {
