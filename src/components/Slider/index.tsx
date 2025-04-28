@@ -1,35 +1,51 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
+import { CardPodcast } from '../CardPodcast';
 
-interface SliderProps {
-  images: string[];
-  interval?: number; // tempo em ms para trocar de imagem automaticamente
-}
+type Podcast = { 
+  img: string;
+  title: string;
+  followers: number;
+  description: string;
+  episodes?: { title: string; img: string; likes: number }[];
+};
 
-const Slider: React.FC<SliderProps> = ({ images, interval = 3000 }) => {
+type SliderProps = {
+  podcasts: Podcast[];
+  interval?: number;
+};
+
+export function Slider({ podcasts, interval = 3000 }: SliderProps) {
+  const limitedPodcasts = podcasts.slice(0, 10); // pega só os 10 primeiros
+
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, interval);
+    if (!isHovered) {
+      const timer = setInterval(() => {
+        setCurrentIndex(prevIndex => (prevIndex + 1) % limitedPodcasts.length);
+      }, interval);
 
-    return () => clearInterval(timer); // limpar intervalo ao desmontar
-  }, [images.length, interval]);
+      return () => clearInterval(timer);
+    }
+  }, [isHovered, limitedPodcasts.length, interval]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
   return (
-    <div className={styles.slider}>
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        className={styles.image}
-      />
+    <div 
+      className={styles.slider}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className={styles.cardContainer}>
+        <CardPodcast {...limitedPodcasts[currentIndex]} />
+      </div>
       <div className={styles.buttons}>
-        {images.map((_, index) => (
+        {limitedPodcasts.map((_, index) => (
           <button
             key={index}
             className={`${styles.button} ${currentIndex === index ? styles.active : ''}`}
@@ -39,6 +55,4 @@ const Slider: React.FC<SliderProps> = ({ images, interval = 3000 }) => {
       </div>
     </div>
   );
-};
-
-export default Slider;
+}

@@ -117,9 +117,17 @@
 }
 
 .ratedPodcast {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.noEps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .linkPage {

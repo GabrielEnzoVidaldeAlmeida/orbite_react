@@ -1,6 +1,8 @@
 import styles from './styles.module.css'
 
 import { CardTheme } from '../../CardTheme'
+import { Slider } from '../../Slider'
+
 
 //ICONS
 import quimica from '../../../assets/images/icons-subject/quimica.png'
@@ -16,9 +18,11 @@ import tecnologia from '../../../assets/images/icons-subject/tecnologia.png'
 import sociologia from '../../../assets/images/icons-subject/sociologia.png'
 import apicultura from '../../../assets/images/icons-subject/apicultura.png'
 import filosofia from '../../../assets/images/icons-subject/filosofia.png'
-import { ArrowRight } from 'lucide-react'
 import { EpCardDefault } from '../../EpCardDefault'
-import Slider from '../../Slider'
+
+//IMG COVER PODCAST
+import capdoLogo from '../../../assets/images/img-podcasts/img-cover/capdo_logo.png'
+import spaceTodayLogo from '../../../assets/images/img-podcasts/img-cover/spacetoday.jpg'
 
 //IMG EPS
 import imgchat from '../../../assets/images/img-podcasts/img-eps/img_do_chat.png'
@@ -26,8 +30,32 @@ import capdo75 from '../../../assets/images/img-podcasts/img-eps/capdo_75.jpg'
 import capdo81 from '../../../assets/images/img-podcasts/img-eps/capdo_81.png'
 import capdo85 from '../../../assets/images/img-podcasts/img-eps/capdo_85.png'
 import capdo129 from '../../../assets/images/img-podcasts/img-eps/capdo_129.png'
-import { CardPodcast } from '../../CardPodcast'
+import spctd3087 from '../../../assets/images/img-podcasts/img-eps/space_today_3087.jpg'
 
+
+// PODCASTS
+const podcasts = [
+  {
+    img: capdoLogo,
+    title: 'Ciência Ao Pé do Ouvido',
+    followers: 120000,
+    description: 'Ciência Ao Pé Do Ouvido explora o fascinante mundo da ciência de maneira simples e acessível. Cada episódio traz descobertas, curiosidades e histórias inspiradoras, com o objetivo de desmistificar temas complexos e aproximar a ciência do nosso cotidiano.', 
+    episodes: [
+      { title: '#129 Luto: como lidar com as finitudes?', img: capdo129, likes:12300  },
+      { title: '#85 Eu estou tão cansado, mas não pra dizer', img: capdo85, likes:9200  },
+      { title: '#81 Luta Antimanicomial', img: capdo81, likes:124220  }
+    ]
+  },
+  {
+    img: spaceTodayLogo,
+    title:'Space Today',
+    followers:987123,
+    description:'Space Today traz as últimas notícias, curiosidades e descobertas sobre o universo. Com uma linguagem clara e envolvente, o podcast conecta você ao mundo da astronomia, exploração espacial e ciências afins, sempre com informação de qualidade e paixão pelo cosmos.',
+    episodes: [
+      { title: '#3087 Inteligência Artificial Melhora A Qualidade Da Imagem Do Buraco Negro', img: spctd3087, likes:92100  },
+    ]
+  },
+]
 
 //TEMAS DE EPISÓDIOS
 const themesSubject = [
@@ -84,9 +112,7 @@ export function Index () {
 
       <h2>Podcasts Em Destaque</h2>
       <section>
-        {/* ESTUDAR E FAZER SÓ: */}
-        {/* <Slider images={[alimentos, fisica]} interval={3000} /> */}
-        <CardPodcast />
+        <Slider podcasts={podcasts} />
       </section>
     </div>
   )
