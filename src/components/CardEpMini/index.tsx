@@ -1,16 +1,20 @@
 import styles from './style.module.css'
 
-import spaceTodayEpTeste from '../../assets/images/img-podcasts/img-cover/spacetoday.jpg'
 import { EllipsisVertical, PlayCircle } from 'lucide-react'
 
 
-export default function CardEpMini () {
+type CardEpMiniProps = {
+  title: string,
+  img: string,
+}
+
+export default function CardEpMini ({ title, img }: CardEpMiniProps) {
   return (
-<div className={styles.containerCard}>
+<div className={styles.containerCard} title={title}>
   <div className={styles.leftSide}>
-    <img src={spaceTodayEpTeste} />
+    <img src={img} />
     <div>
-      <h4>SpaceToday</h4>
+      <h4>{title}</h4>
       <label>10.000 curtidas</label>
     </div>
   </div>

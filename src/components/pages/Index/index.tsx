@@ -82,7 +82,7 @@ export function Index () {
         ))}
       </section>
 
-      <h2>Principais Podcasts</h2>
+      <h2>Podcasts Em Destaque</h2>
       <section>
         {/* ESTUDAR E FAZER SÓ: */}
         {/* <Slider images={[alimentos, fisica]} interval={3000} /> */}

@@ -97,10 +97,17 @@
 
 .podcastName h3 {
   margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .podcastName label {
   font-size: 1.6rem;
   color: var(--options-card);
   
+}
+
+.ratedPodcast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
