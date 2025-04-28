@@ -26,6 +26,7 @@ import capdo75 from '../../../assets/images/img-podcasts/img-eps/capdo_75.jpg'
 import capdo81 from '../../../assets/images/img-podcasts/img-eps/capdo_81.png'
 import capdo85 from '../../../assets/images/img-podcasts/img-eps/capdo_85.png'
 import capdo129 from '../../../assets/images/img-podcasts/img-eps/capdo_129.png'
+import { CardPodcast } from '../../CardPodcast'
 
 
 //TEMAS DE EPISÓDIOS
@@ -43,7 +44,7 @@ const themesSubject = [
   { textImg: sociologia, text: 'Sociologia' },
   { textImg: apicultura, text: 'Apicultura' },
   { textImg: filosofia, text: 'Filosofia' },
-  { svgIcon: <ArrowRight />, text: 'Mais temas' },
+  { text: 'Mais categorias...' },
 
 ]
 
@@ -67,10 +68,10 @@ const epsRecent = [
 export function Index () {
   return (
     <div className={styles.containerIndex}>
-      <h2>Principais Temas</h2>
+      <h2>Principais Categorias</h2>
       <section className={styles.mainThemes}>
         {themesSubject.map((theme, index) => (
-          <CardTheme key={index} textImg={theme?.textImg} svgIcon={theme?.svgIcon} text={theme.text} />
+          <CardTheme key={index} textImg={theme?.textImg} text={theme.text} />
         ))}
       </section>
 
@@ -85,6 +86,7 @@ export function Index () {
       <section>
         {/* ESTUDAR E FAZER SÓ: */}
         {/* <Slider images={[alimentos, fisica]} interval={3000} /> */}
+        <CardPodcast />
       </section>
     </div>
   )
