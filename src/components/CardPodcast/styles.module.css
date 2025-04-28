@@ -20,6 +20,8 @@
     border-bottom-right-radius: 0.4rem;
     border: solid 0.2rem var(--borders);
 
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -67,6 +69,9 @@
 
 .podcastName {
   padding: 1.2rem 1.6rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .podcastName h2 {
@@ -93,6 +98,11 @@
 
 .podcastName p {
   text-align: justify;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .podcastName h3 {
@@ -110,4 +120,29 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.linkPage {
+  /* background: rebeccapurple; */
+  padding: 2rem 1.6rem;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.linkPage a {
+  background: var(--btn-default);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  /* color: var(--primary-text); */
+  /* color: var(--secondary-text); */
+  color: var(--contrast-text);
+
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.linkPage a:hover {
+  filter: brightness(80%);
 }
