@@ -18,7 +18,11 @@
     background: var(--background-card);
     border-top-right-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
-    border: solid 0.2rem var(--borders);
+    /* border: solid 0.2rem var(--borders); */
+    border-top: solid 0.2rem var(--borders);
+    border-bottom: solid 0.2rem var(--borders);
+    border-right: solid 0.2rem var(--borders);
+
 
     display: flex;
     flex-direction: column;
@@ -37,6 +41,7 @@
 .imgPodcast img {
   width: 100%;
   height: 100%;
+  border: solid 0.2rem var(--borders);
   border-bottom-left-radius: 0.4rem;
   border-top-left-radius: 0.4rem;
   object-fit: cover;
@@ -83,6 +88,7 @@
 
 .podcastName h2 span {
   /* flex: 1; */
+  
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;

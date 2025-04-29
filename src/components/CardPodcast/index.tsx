@@ -39,7 +39,7 @@ export function CardPodcast ({ img, title, followers, description, episodes }: C
           {/* <h2>SpaceTodayasdadadadadas <label>123.987 seguidores</label></h2> */}
           <h2>
             <span>{title}</span> 
-            <label>{followers.toLocaleString()} seguidores</label>
+            <label> &nbsp; {followers.toLocaleString()} seguidores</label>
           </h2>
           <p><strong>Descrição: </strong>{description}</p>
 

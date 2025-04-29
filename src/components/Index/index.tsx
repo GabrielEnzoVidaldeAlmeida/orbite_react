@@ -22,6 +22,7 @@ import { EpCardDefault } from '../EpCardDefault'
 
 //IMG COVER PODCAST
 import capdoLogo from '../../assets/images/img-podcasts/img-cover/capdo_logo.png'
+import naoInviabilize from '../../assets/images/img-podcasts/img-cover/nao_inviabilize.png'
 import spaceTodayLogo from '../../assets/images/img-podcasts/img-cover/spacetoday.jpg'
 
 //IMG EPS
@@ -32,13 +33,17 @@ import capdo85 from '../../assets/images/img-podcasts/img-eps/capdo_85.png'
 import capdo129 from '../../assets/images/img-podcasts/img-eps/capdo_129.png'
 import spctd3087 from '../../assets/images/img-podcasts/img-eps/space_today_3087.jpg'
 
+import picoleLimao from '../../assets/images/img-podcasts/img-eps/picole_limao.jpeg'
+import luzAcesa from '../../assets/images/img-podcasts/img-eps/luz_acesa.png'
+import pimentaOutros from '../../assets/images/img-podcasts/img-eps/pimenta_outros.png'
+
 
 // PODCASTS
 const podcasts = [
   {
     img: capdoLogo,
     title: 'Ciência Ao Pé do Ouvido',
-    followers: 120000,
+    followers: 99800,
     description: 'Ciência Ao Pé Do Ouvido explora o fascinante mundo da ciência de maneira simples e acessível. Cada episódio traz descobertas, curiosidades e histórias inspiradoras, com o objetivo de desmistificar temas complexos e aproximar a ciência do nosso cotidiano.', 
     episodes: [
       { title: '#129 Luto: como lidar com as finitudes?', img: capdo129, likes:12300  },
@@ -49,10 +54,21 @@ const podcasts = [
   {
     img: spaceTodayLogo,
     title:'Space Today',
-    followers:987123,
+    followers:1800000,
     description:'Space Today traz as últimas notícias, curiosidades e descobertas sobre o universo. Com uma linguagem clara e envolvente, o podcast conecta você ao mundo da astronomia, exploração espacial e ciências afins, sempre com informação de qualidade e paixão pelo cosmos.',
     episodes: [
       { title: '#3087 Inteligência Artificial Melhora A Qualidade Da Imagem Do Buraco Negro', img: spctd3087, likes:92100  },
+    ]
+  },
+  {
+    img: naoInviabilize,
+    title:'Não Inviabilize',
+    followers:816000,
+    description: 'Não Inviabilize traz histórias reais contadas com humor, empatia e sinceridade. Um espaço para refletir, rir e se emocionar com relatos que poderiam ser de qualquer um de nós.',
+    episodes: [
+      { title: 'MALUCA', img: picoleLimao, likes:43189  },
+      { title: 'FORMA', img: luzAcesa, likes:24331  },
+      { title: 'PAJARITO', img: pimentaOutros, likes:84225  }
     ]
   },
 ]
