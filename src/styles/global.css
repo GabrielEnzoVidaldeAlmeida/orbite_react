@@ -27,3 +27,8 @@ body {
   .layout > main {
     flex: 1;
   }
+
+  section {
+    margin-top: 1.2rem;
+    margin-bottom: 6rem;
+  }

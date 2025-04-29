@@ -26,7 +26,6 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  cursor: pointer;
 }
 
 .infoNav input {
@@ -62,4 +61,14 @@
   color: var(--contrast-text);
   border-color: #293647;
   box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
+}
+
+/* -- LISTA DE CATEGORIAS -- */
+
+.listCategories {
+  position: absolute;
+  width: 40rem;
+  height: 40rem;
+  background: red;
+  z-index: 999;
 }
