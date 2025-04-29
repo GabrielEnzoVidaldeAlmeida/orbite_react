@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import { Home } from "../../components/pages/Home";
 import { Login } from "../../components/pages/Login";
+import { NotFound } from "../../components/pages/NotFound";
 
 function ScrollToTop () {
   const {pathname} = useLocation();
@@ -20,7 +21,7 @@ export function MainRouter () {
       <Route path='/' element={<Home />} />
       <Route path='/login/' element={<Login />} />
 
-      {/* <Route path='*' element={<NotFound />} /> */}
+      <Route path='*' element={<NotFound />} />
     </Routes>
     <ScrollToTop />
   </BrowserRouter>

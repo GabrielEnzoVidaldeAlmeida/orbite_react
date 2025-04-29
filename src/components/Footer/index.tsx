@@ -19,7 +19,7 @@ export function Footer () {
         {/* AJUDA */}
         <div className={styles.linksFooter}>
           <label>Ajuda</label>
-          <RouterLink href='/'>Suporte</RouterLink>
+          <RouterLink href='/suport/'>Suporte</RouterLink>
         </div>
 
         {/* REDES SOCIAIS */}
