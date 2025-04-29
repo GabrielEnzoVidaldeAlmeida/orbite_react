@@ -90,8 +90,9 @@
 }
 
 .podcastName h2 label {
+  display: flex;
+  align-self: flex-end;
   flex-shrink: 0;
-  margin-left: 0.4rem;
   font-size: 1.6rem;
   color: var(--options-card);
 }
@@ -108,12 +109,6 @@
 .podcastName h3 {
   margin-top: 1.6rem;
   margin-bottom: 0.4rem;
-}
-
-.podcastName label {
-  font-size: 1.6rem;
-  color: var(--options-card);
-  
 }
 
 .ratedPodcast {

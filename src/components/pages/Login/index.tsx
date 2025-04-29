@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import logo from '../../../assets/images/logo/logo.png'
 import { DefaultInput } from "../../DefaultInput"
 import { RegisterButton } from "../../RegisterButton"
+import { RouterLink } from "../../RouterLink"
 
 export function Login () {
   useEffect(() => {
@@ -29,7 +30,7 @@ export function Login () {
           <DefaultInput labelText="Password:" id="password" type="password" />
 
           {/* <ButtonDefault text="Entrar"/> */}
-          <RegisterButton text="Entrar" />
+          <RouterLink href="/"><RegisterButton text="Entrar" /></RouterLink>
         </form>
           <strong>Não tem uma conta? &nbsp;<a href="#">Criar conta</a></strong>
       </div>

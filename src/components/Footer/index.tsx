@@ -2,6 +2,7 @@ import styles from './styles.module.css'
 import { X } from '../../assets/svgs/icon-svg/X'
 import { Facebook } from '../../assets/svgs/icon-svg/Facebook'
 import { Instagram } from '../../assets/svgs/icon-svg/Instagram'
+import { RouterLink } from '../RouterLink'
 
 export function Footer () {
   return (
@@ -18,7 +19,7 @@ export function Footer () {
         {/* AJUDA */}
         <div className={styles.linksFooter}>
           <label>Ajuda</label>
-          <a href='#'>Suporte</a>
+          <RouterLink href='/'>Suporte</RouterLink>
         </div>
 
         {/* REDES SOCIAIS */}

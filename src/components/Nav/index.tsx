@@ -1,6 +1,7 @@
 import styles from './styles.module.css'
 import logo from '../../assets/images/logo/logo.png'
 import { ChevronDown } from 'lucide-react'
+import { RouterLink } from '../RouterLink'
 
 
 
@@ -9,7 +10,7 @@ export function Nav () {
     <nav className={styles.navBar}>
       <div className={styles.containerNav}>
         <div className={styles.logoNav}>
-          <img src={logo} alt='logo' />
+          <RouterLink href='/'><img src={logo} alt='logo' /></RouterLink>
         </div>
 
         <div className={styles.infoNav}>

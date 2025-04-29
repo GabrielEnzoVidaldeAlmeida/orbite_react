@@ -1,36 +1,36 @@
 import styles from './styles.module.css'
 
-import { CardTheme } from '../../CardTheme'
-import { Slider } from '../../Slider'
+import { CardTheme } from '../CardTheme'
+import { Slider } from '../Slider'
 
 
 //ICONS
-import quimica from '../../../assets/images/icons-subject/quimica.png'
-import esporte from '../../../assets/images/icons-subject/esporte.png'
-import matematica from '../../../assets/images/icons-subject/matematica.png'
-import alimentos from '../../../assets/images/icons-subject/alimentos.png'
-import ciencias from '../../../assets/images/icons-subject/ciencias.png'
-import fisica from '../../../assets/images/icons-subject/fisica.png'
-import espanhol from '../../../assets/images/icons-subject/espanhol.png'
-import ingles from '../../../assets/images/icons-subject/ingles.png'
-import artes from '../../../assets/images/icons-subject/artes.png'
-import tecnologia from '../../../assets/images/icons-subject/tecnologia.png'
-import sociologia from '../../../assets/images/icons-subject/sociologia.png'
-import apicultura from '../../../assets/images/icons-subject/apicultura.png'
-import filosofia from '../../../assets/images/icons-subject/filosofia.png'
-import { EpCardDefault } from '../../EpCardDefault'
+import quimica from '../../assets/images/icons-subject/quimica.png'
+import esporte from '../../assets/images/icons-subject/esporte.png'
+import matematica from '../../assets/images/icons-subject/matematica.png'
+import alimentos from '../../assets/images/icons-subject/alimentos.png'
+import ciencias from '../../assets/images/icons-subject/ciencias.png'
+import fisica from '../../assets/images/icons-subject/fisica.png'
+import espanhol from '../../assets/images/icons-subject/espanhol.png'
+import ingles from '../../assets/images/icons-subject/ingles.png'
+import artes from '../../assets/images/icons-subject/artes.png'
+import tecnologia from '../../assets/images/icons-subject/tecnologia.png'
+import sociologia from '../../assets/images/icons-subject/sociologia.png'
+import apicultura from '../../assets/images/icons-subject/apicultura.png'
+import filosofia from '../../assets/images/icons-subject/filosofia.png'
+import { EpCardDefault } from '../EpCardDefault'
 
 //IMG COVER PODCAST
-import capdoLogo from '../../../assets/images/img-podcasts/img-cover/capdo_logo.png'
-import spaceTodayLogo from '../../../assets/images/img-podcasts/img-cover/spacetoday.jpg'
+import capdoLogo from '../../assets/images/img-podcasts/img-cover/capdo_logo.png'
+import spaceTodayLogo from '../../assets/images/img-podcasts/img-cover/spacetoday.jpg'
 
 //IMG EPS
-import imgchat from '../../../assets/images/img-podcasts/img-eps/img_do_chat.png'
-import capdo75 from '../../../assets/images/img-podcasts/img-eps/capdo_75.jpg'
-import capdo81 from '../../../assets/images/img-podcasts/img-eps/capdo_81.png'
-import capdo85 from '../../../assets/images/img-podcasts/img-eps/capdo_85.png'
-import capdo129 from '../../../assets/images/img-podcasts/img-eps/capdo_129.png'
-import spctd3087 from '../../../assets/images/img-podcasts/img-eps/space_today_3087.jpg'
+import imgchat from '../../assets/images/img-podcasts/img-eps/img_do_chat.png'
+import capdo75 from '../../assets/images/img-podcasts/img-eps/capdo_75.jpg'
+import capdo81 from '../../assets/images/img-podcasts/img-eps/capdo_81.png'
+import capdo85 from '../../assets/images/img-podcasts/img-eps/capdo_85.png'
+import capdo129 from '../../assets/images/img-podcasts/img-eps/capdo_129.png'
+import spctd3087 from '../../assets/images/img-podcasts/img-eps/space_today_3087.jpg'
 
 
 // PODCASTS

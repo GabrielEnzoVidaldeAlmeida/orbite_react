@@ -2,6 +2,7 @@ import { CornerDownLeft, MoonIcon, SunIcon } from 'lucide-react'
 import styles from './styles.module.css'
 import { useEffect, useState } from 'react'
 import { RegisterButton } from '../RegisterButton'
+import { RouterLink } from '../RouterLink'
 
 type AvailableThemes = 'dark' | 'light'
 
@@ -45,7 +46,7 @@ export function MenuLateral ({onClose}: MenuLateraProps) {
         <h2>Seu Universo</h2>
         <p>Faça login ou cadastre-se para ter acesso ao seu universo de Podcast:</p>
         <div className={styles.containerRegisterBtn}>
-          <RegisterButton text='Entrar' />
+          <RouterLink href='/login/'><RegisterButton text='Entrar' /></RouterLink>
           <RegisterButton text='Cadastro'  />
           {/* <button>ola</button>
           <button>ola</button> */}
